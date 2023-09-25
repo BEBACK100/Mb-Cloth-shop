@@ -12,10 +12,11 @@ const Header = () => {
             <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
               <li><Link to="/">Home</Link></li>
               <li>
-                <a>Products</a>
+                <a>Sumary</a>
                 <ul className="p-2">
-                  <li><Link to="/about" >About Us</Link  ></li>
                   <li><Link to="/contact" >Contact</Link ></li>
+                  <li><Link to="/product" >Product</Link ></li>
+                  <li><Link to="/about" >About Us</Link  ></li>
                 </ul>
               </li>
               <li><a>Item 3</a></li>
@@ -28,9 +29,12 @@ const Header = () => {
             <li><Link to='/'>Home</Link ></li>
             <li><Link  to='/about'>About Us</Link ></li>
             <li><Link  to='/contact'>Contact</Link ></li>
+            
+            <li><Link  to='/product'>Product</Link ></li>
+            
             <li tabIndex={0}>
               <details>
-                <summary>Products</summary>
+                <summary>Summary</summary>
                 <ul className="p-2">
                   <li><Link to ="/about">About Us</Link></li>
                   <li><Link to="/contact">Contact</Link></li>
