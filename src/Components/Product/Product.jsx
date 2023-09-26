@@ -4,7 +4,7 @@ import SingalProduct from './SingalProduct';
 
 const Product = () => {
     const data=useLoaderData()
-    console.log(data);
+    // console.log(data);
     return (
         <div>
             <h1>Product is the part:{data.length}</h1>

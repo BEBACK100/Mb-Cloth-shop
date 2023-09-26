@@ -8,6 +8,7 @@ import About from './Components/About/About.jsx'
 import Contuct from './Components/Contuct/Contuct.jsx'
 import Product from './Components/Product/Product.jsx'
 import Errorpage from './Components/ErrorPage/Errorpage.jsx'
+import ProductDetails from './Components/Product/ProductDetails.jsx'
 
 
 const router=createBrowserRouter([
@@ -29,6 +30,11 @@ const router=createBrowserRouter([
         element:<Product></Product>,
         loader:()=>fetch('https://jsonplaceholder.typicode.com/photos')
         
+      },
+      {
+        path:"productdetails/:productId",
+        element:<ProductDetails></ProductDetails>,
+        loader:({params})=>fetch(`https://jsonplaceholder.typicode.com/photos/${params.productId}`)
       }
     ]
   }
